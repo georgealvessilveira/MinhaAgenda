@@ -1,0 +1,12 @@
+c:\users\usuario\documents\visual studio 2015\Projects\MinhaAgenda\MinhaAgenda\bin\Debug\MinhaAgenda.exe.config
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\bin\Debug\MinhaAgenda.exe
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\bin\Debug\MinhaAgenda.pdb
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.Properties.Resources.resources
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.view.AdicionarContatoForm.resources
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.exe
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.pdb
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.view.VisualizarRfm.resources
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.view.PegarPorId.resources
+C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.PegarId.resources
