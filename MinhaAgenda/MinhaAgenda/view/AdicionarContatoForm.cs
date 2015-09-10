@@ -37,7 +37,7 @@ namespace MinhaAgenda.view
             novoContato.Email = emailTbx.Text;
             novoContato.Telefone = telefoneTbx.Text;
 
-            _ContatoDao.adicionarContato(novoContato);
+            _ContatoDao.AdicionarContato(novoContato);
             MessageBox.Show("Contato adicionado com sucesso!");
 
             idTbx.Text = "";

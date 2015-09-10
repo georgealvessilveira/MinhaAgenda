@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\ContatoDao.cs" />
+    <Compile Include="dao\IContatoDao.cs" />
     <Compile Include="view\AgendaFrm.cs">
       <SubType>Form</SubType>
     </Compile>

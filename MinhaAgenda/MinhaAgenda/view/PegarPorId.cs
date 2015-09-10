@@ -33,7 +33,7 @@ namespace MinhaAgenda.view
             {
                 Id = idBusca
             };
-            contato = _contatoDao.pegarPorID(contato);
+            contato = _contatoDao.PegarPorID(contato);
             if(contato.Id == 0)
             {
                 MessageBox.Show("Contato não encontrado");
@@ -53,7 +53,7 @@ namespace MinhaAgenda.view
 
         private void removerBtn_Click(object sender, EventArgs e)
         {
-            _contatoDao.removerContato(contato);
+            _contatoDao.RemoverContato(contato);
             MessageBox.Show("Contato removido com sucesso!");
             idTbx.Text = "";
             nomeTbx.Text = "";
@@ -68,7 +68,7 @@ namespace MinhaAgenda.view
             contato.Nome = nomeTbx.Text;
             contato.Email = emailTbx.Text;
             contato.Telefone = telefoneTbx.Text;
-            _contatoDao.atualizarContato(contato);
+            _contatoDao.AtualizarContato(contato);
             MessageBox.Show("Contato Atualizado com sucesso!!");
             idTbx.Text = "";
             nomeTbx.Text = "";

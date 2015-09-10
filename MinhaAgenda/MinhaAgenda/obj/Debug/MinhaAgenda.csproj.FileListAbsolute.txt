@@ -10,3 +10,6 @@ C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\o
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.view.VisualizarRfm.resources
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.view.PegarPorId.resources
 C:\Users\Usuario\Documents\Visual Studio 2015\Projects\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.PegarId.resources
+C:\Users\A-IKASORUK\Downloads\MinhaAgenda\MinhaAgenda\MinhaAgenda\bin\Debug\MinhaAgenda.exe.config
+C:\Users\A-IKASORUK\Downloads\MinhaAgenda\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.exe
+C:\Users\A-IKASORUK\Downloads\MinhaAgenda\MinhaAgenda\MinhaAgenda\obj\Debug\MinhaAgenda.pdb

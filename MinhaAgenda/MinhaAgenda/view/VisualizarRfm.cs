@@ -28,7 +28,7 @@ namespace MinhaAgenda.view
 
         private void VisualizarRfm_Load(object sender, EventArgs e)
         {
-            foreach (Contato contato in _ContatoDao.pegarTodos())
+            foreach (Contato contato in _ContatoDao.PegarTodos())
             {
                 int index = ContatosDgv.Rows.Add();
                 DataGridViewRow linha = ContatosDgv.Rows[index];

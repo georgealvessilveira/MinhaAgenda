@@ -18,7 +18,7 @@ namespace MinhaAgenda
         public PegarId()
         {
             InitializeComponent();
-            _ContatoDao = ContatoDao.getInstancia();
+            _ContatoDao = ContatoDao.GetInstancia();
         }
 
         private ContatoDao _ContatoDao;
@@ -26,7 +26,7 @@ namespace MinhaAgenda
         private void adicionarContatoBtn_Click(object sender, EventArgs e)
         {
             AdicionarContatoForm adicionarContato = new AdicionarContatoForm();
-            adicionarContato.ContatoDao = ContatoDao.getInstancia();
+            adicionarContato.ContatoDao = ContatoDao.GetInstancia();
             adicionarContato.ShowDialog();
         }
 

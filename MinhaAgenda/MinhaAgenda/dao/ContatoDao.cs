@@ -7,7 +7,7 @@ using MinhaAgenda.model;
 
 namespace MinhaAgenda.dao
 {
-    public class ContatoDao
+    public class ContatoDao : IContatoDao
     {
         private IList<Contato> _ListaContatos;
         private static ContatoDao _ContatoDao;
@@ -17,42 +17,34 @@ namespace MinhaAgenda.dao
             _ListaContatos = new List<Contato>();
         }
 
-        public void adicionarContato(Contato contato)
+        public void AdicionarContato(Contato contato)
         {
             _ListaContatos.Add(contato);
         }
-        public void removerContato(Contato contato)
+        public void RemoverContato(Contato contato)
         {
             _ListaContatos.Remove(contato);
         }
 
-        public void atualizarContato(Contato contato)
+        public void AtualizarContato(Contato contato)
         {
-            Contato contatoAntigo = this.pegarPorID(contato);
+            Contato contatoAntigo = this.PegarPorID(contato);
             contatoAntigo.Nome = contato.Nome;
             contatoAntigo.Email = contato.Email;
             contatoAntigo.Telefone = contato.Telefone;
         }
 
-        public IList<Contato> pegarTodos()
+        public IList<Contato> PegarTodos()
         {
             return _ListaContatos;
         }
 
-        public static ContatoDao getInstancia()
-        {
-            if(_ContatoDao == null)
-            {
-                _ContatoDao = new ContatoDao();
-            }
-            return _ContatoDao;
-        }
-        public Contato pegarPorID(Contato contato)
+        public Contato PegarPorID(Contato contato)
         {
             Contato retorno = new Contato();
-            foreach(Contato c in this.pegarTodos())
+            foreach (Contato c in this.PegarTodos())
             {
-                if(c.Id == contato.Id)
+                if (c.Id == contato.Id)
                 {
                     retorno = c;
                 }
@@ -60,6 +52,13 @@ namespace MinhaAgenda.dao
             return retorno;
         }
 
-
+        public static ContatoDao GetInstancia()
+        {
+            if(_ContatoDao == null)
+            {
+                _ContatoDao = new ContatoDao();
+            }
+            return _ContatoDao;
+        }
     }
 }
