@@ -1,3 +1,3 @@
-# AgendaPOO2
+# MinhaAgenda
 Agenda criada para aula de programação orientada a objetos...
 
