@@ -14,16 +14,14 @@ namespace MinhaAgenda.view
 {
     public partial class AdicionarContatoForm : Form
     {
-
-        
         public AdicionarContatoForm()
         {
             InitializeComponent();
         }
 
-        private ContatoDao _ContatoDao;
+        private IContatoDao _ContatoDao;
 
-        public ContatoDao ContatoDao
+        public ContatoArquivoDao ContatoDao
         {
             set { this._ContatoDao = value; }
         }

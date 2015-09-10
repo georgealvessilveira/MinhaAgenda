@@ -19,9 +19,9 @@ namespace MinhaAgenda.view
             InitializeComponent();
         }
 
-        private ContatoDao _ContatoDao;
+        private ContatoArquivoDao _ContatoDao;
 
-        public ContatoDao ContatoDao
+        public ContatoArquivoDao ContatoDao
         {
             set { this._ContatoDao = value; }
         }

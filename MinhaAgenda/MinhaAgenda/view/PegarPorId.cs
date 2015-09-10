@@ -14,10 +14,10 @@ namespace MinhaAgenda.view
 {
     public partial class PegarPorId : Form
     {
-        private ContatoDao _contatoDao;
+        private ContatoArquivoDao _contatoDao;
         private Contato contato;
 
-        public ContatoDao contatoDao
+        public ContatoArquivoDao contatoDao
         {
             set { this._contatoDao = value; }
         }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dao\ContatoArquivoDao.cs" />
     <Compile Include="dao\ContatoDao.cs" />
     <Compile Include="dao\IContatoDao.cs" />
     <Compile Include="view\AgendaFrm.cs">

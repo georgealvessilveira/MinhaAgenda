@@ -21,6 +21,7 @@ namespace MinhaAgenda.dao
         {
             _ListaContatos.Add(contato);
         }
+
         public void RemoverContato(Contato contato)
         {
             _ListaContatos.Remove(contato);
