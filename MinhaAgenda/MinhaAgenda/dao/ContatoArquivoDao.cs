@@ -16,25 +16,27 @@ namespace MinhaAgenda.dao
         private Stream stream;
         private StreamReader leitor;
         private StreamWriter escritor;
-        private string caminho = @"C:\Users\A-IKASORUK\Downloads\MinhaAgenda\contato.txt";
+        private string caminho;
 
         private ContatoArquivoDao()
         {
             _ListaContatos = new List<Contato>();
+            this.caminho = @"C:\Users\A-IKASORUK\Downloads\MinhaAgenda\contato.txt";
         }
 
         public void AdicionarContato(Contato contato)
         {
-            stream = File.Open(caminho, FileMode.Create);
-            escritor = new StreamWriter(stream);
-
-            escritor.WriteLine(contato.Id);
-            escritor.WriteLine(contato.Nome);
-            escritor.WriteLine(contato.Email);
-            escritor.WriteLine(contato.Telefone);
-
-            escritor.Close();
-            stream.Close();
+            using (stream = File.Open(caminho, FileMode.Create))
+            {
+                using (escritor = new StreamWriter(stream))
+                {
+                    escritor.WriteLine(contato.Id);
+                    escritor.WriteLine(contato.Nome);
+                    escritor.WriteLine(contato.Email);
+                    escritor.WriteLine(contato.Telefone);
+                }
+            }
+            this._ListaContatos.Add(contato);
         }
 
         public void RemoverContato(Contato contato)
