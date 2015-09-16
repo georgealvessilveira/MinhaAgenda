@@ -13,7 +13,8 @@ namespace MinhaAgenda.dao
         private IList<Contato> _ListaContatos;
         private static ContatoArquivoDao _ContatoDao;
 
-        private Stream stream;
+        private Stream streamEscritor;
+        private Stream streamLeitor;
         private StreamReader leitor;
         private StreamWriter escritor;
         private string caminho;
@@ -27,12 +28,13 @@ namespace MinhaAgenda.dao
         public void AdicionarContato(Contato contato)
         {
             this._ListaContatos.Add(contato);
-            using (stream = File.Open(caminho, FileMode.OpenOrCreate))
+            using (streamEscritor = File.Open(caminho, FileMode.OpenOrCreate))
             {
-                using (escritor = new StreamWriter(stream))
+                using (escritor = new StreamWriter(streamEscritor))
                 {
-                    escritor.Write("{0}, {1}, {2}, {3}\n", contato.Id,
-                        contato.Nome, contato.Email, contato.Telefone);
+                    escritor.Write("ID: {0} \nNome: {1} \nE-mail: {2} \nTelefone: {3}\n", 
+                        contato.Id, contato.Nome, contato.Email, contato.Telefone);
+                    escritor.WriteLine("*--------------------------------------------------------*");
                 }
             }
         }
