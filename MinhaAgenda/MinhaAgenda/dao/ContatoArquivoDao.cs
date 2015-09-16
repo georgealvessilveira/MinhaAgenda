@@ -26,17 +26,15 @@ namespace MinhaAgenda.dao
 
         public void AdicionarContato(Contato contato)
         {
-            using (stream = File.Open(caminho, FileMode.Create))
+            this._ListaContatos.Add(contato);
+            using (stream = File.Open(caminho, FileMode.OpenOrCreate))
             {
                 using (escritor = new StreamWriter(stream))
                 {
-                    escritor.WriteLine(contato.Id);
-                    escritor.WriteLine(contato.Nome);
-                    escritor.WriteLine(contato.Email);
-                    escritor.WriteLine(contato.Telefone);
+                    escritor.Write("{0}, {1}, {2}, {3}\n", contato.Id,
+                        contato.Nome, contato.Email, contato.Telefone);
                 }
             }
-            this._ListaContatos.Add(contato);
         }
 
         public void RemoverContato(Contato contato)

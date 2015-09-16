@@ -42,7 +42,6 @@ namespace MinhaAgenda.view
             nomeTbx.Text = "";
             emailTbx.Text = "";
             telefoneTbx.Text = "";
-
         }
 
         private void cancelarBtn_Click(object sender, EventArgs e)
