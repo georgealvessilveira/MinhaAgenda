@@ -15,12 +15,12 @@ namespace MinhaAgenda
 {
     public partial class PegarId : Form
     {
-        private ContatoArquivoDao _ContatoDao;
+        private ContatoDaoService _ContatoDao;
 
         public PegarId()
         {
             InitializeComponent();
-            _ContatoDao = ContatoArquivoDao.GetInstancia();
+            _ContatoDao = new ContatoDaoService(ContatoArquivoDao.GetInstancia());
         }
         
         private void adicionarContatoBtn_Click(object sender, EventArgs e)

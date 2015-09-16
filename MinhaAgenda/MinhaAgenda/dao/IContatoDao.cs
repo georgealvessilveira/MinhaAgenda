@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MinhaAgenda.dao
 {
-    interface IContatoDao
+    public interface IContatoDao
     {
         void AdicionarContato(Contato contato);
         void RemoverContato(Contato contato);

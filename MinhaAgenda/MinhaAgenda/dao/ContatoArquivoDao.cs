@@ -37,24 +37,24 @@ namespace MinhaAgenda.dao
             escritor.Close();
         }
 
+        public void RemoverContato(Contato contato)
+        {
+
+        }
+
         public void AtualizarContato(Contato contato)
         {
             
         }
+        
+        public IList<Contato> PegarTodos()
+        {
+            return _ListaContatos;
+        }
 
         public Contato PegarPorID(Contato contato)
         {
-            throw new NotImplementedException();
-        }
-
-        public IList<Contato> PegarTodos()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoverContato(Contato contato)
-        {
-            
+            return contato;
         }
 
         public ContatoArquivoDao GetInstancia()
