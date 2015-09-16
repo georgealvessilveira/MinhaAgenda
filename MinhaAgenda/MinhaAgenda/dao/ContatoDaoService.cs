@@ -10,6 +10,10 @@ namespace MinhaAgenda.dao
     public class ContatoDaoService
     {
         private IContatoDao contatoDao;
+        public IContatoDao ContatoDao
+        {
+            get { return contatoDao; }
+        }
 
         public ContatoDaoService(IContatoDao contatoDao)
         {

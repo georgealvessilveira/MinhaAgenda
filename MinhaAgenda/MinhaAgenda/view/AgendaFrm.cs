@@ -33,14 +33,14 @@ namespace MinhaAgenda
         private void mostrarTodosBtn_Click(object sender, EventArgs e)
         {
             VisualizarRfm visualizar = new VisualizarRfm();
-            visualizar.ContatoDao = _ContatoDao;
+            visualizar.ContatoDao = (ContatoArquivoDao)_ContatoDao.ContatoDao;
             visualizar.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             PegarPorId buscarId = new PegarPorId();
-            buscarId.contatoDao = _ContatoDao;
+            buscarId.contatoDao = (ContatoArquivoDao)_ContatoDao.ContatoDao;
             buscarId.ShowDialog();
         }
     }

@@ -39,12 +39,12 @@ namespace MinhaAgenda.dao
 
         public void RemoverContato(Contato contato)
         {
-
+            throw new NotImplementedException();
         }
 
         public void AtualizarContato(Contato contato)
         {
-            
+            throw new NotImplementedException();
         }
         
         public IList<Contato> PegarTodos()
@@ -54,10 +54,10 @@ namespace MinhaAgenda.dao
 
         public Contato PegarPorID(Contato contato)
         {
-            return contato;
+            throw new NotImplementedException();
         }
 
-        public ContatoArquivoDao GetInstancia()
+        public static ContatoArquivoDao GetInstancia()
         {
             if (_ContatoDao == null)
             {
