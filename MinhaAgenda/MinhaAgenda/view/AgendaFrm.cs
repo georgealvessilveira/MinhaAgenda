@@ -26,7 +26,7 @@ namespace MinhaAgenda
         private void adicionarContatoBtn_Click(object sender, EventArgs e)
         {
             AdicionarContatoForm adicionarContato = new AdicionarContatoForm();
-            adicionarContato.ContatoDao = ContatoArquivoDao.GetInstancia();
+            adicionarContato.ContatoDao = (ContatoArquivoDao)_ContatoDao.ContatoDao;
             adicionarContato.ShowDialog();
         }
 

@@ -19,11 +19,11 @@ namespace MinhaAgenda.view
             InitializeComponent();
         }
 
-        private IContatoDao _ContatoDao;
+        private ContatoDaoService _ContatoDao;
 
         public ContatoArquivoDao ContatoDao
         {
-            set { this._ContatoDao = value; }
+            set { this._ContatoDao = new ContatoDaoService(value); }
         }
 
         private void adicionarBtn_Click(object sender, EventArgs e)
@@ -48,6 +48,11 @@ namespace MinhaAgenda.view
         private void cancelarBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AdicionarContatoForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

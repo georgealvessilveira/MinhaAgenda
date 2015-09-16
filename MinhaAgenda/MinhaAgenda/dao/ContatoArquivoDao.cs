@@ -33,8 +33,8 @@ namespace MinhaAgenda.dao
             escritor.WriteLine(contato.Email);
             escritor.WriteLine(contato.Telefone);
 
-            stream.Close();
             escritor.Close();
+            stream.Close();
         }
 
         public void RemoverContato(Contato contato)
